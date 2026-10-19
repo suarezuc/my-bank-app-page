@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>My Bank App</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- div.logo -->
+      <div class="logo">MyBankApp</div>
+
+      <!-- div.nav-links -->
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Accounts</a>
+        <a href="#">Loans</a>
+        <a href="#">Investments</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- div.nav-cta -->
+      <div class="nav-cta">
+        <button class="login-cta">Login</button>
+      </div>
+    </header>
+
+    <!-- hero-section -->
+    <section class="hero-section">
+      <!--  div.hero-bg -->
+      <div class="hero-bg">
+        <!-- div.hero-content -->
+        <div class="hero-content">
+          <!--h1.hero-title -->
+          <h1 class="hero-title">Welcome to MyBank</h1>
+          <!-- p.hero-subtitle -->
+          <p class="hero-subtitle">
+            Manage your finances securely and efficiently.
+          </p>
+          <!-- a.hero-btn -->
+          <a href="#" class="hero-btn">Open Account</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- services-section -->
+    <section class="services-section">
+      <!-- div.section-header -->
+      <div class="section-header">
+        <h2>Our Banking Services</h2>
+      </div>
+
+      <!-- div.services-grid -->
+      <div class="services-grid">
+        <!-- div.service-card -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-wallet"></i></div>
+          <h3>Personal Accounts</h3>
+          <p>Savings & Checking Options</p>
+        </div>
+
+        <!-- 2 div.service-card -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-city"></i></div>
+          <h3>Business Banking</h3>
+          <p>Solutions for Your Business</p>
+        </div>
+
+        <!-- 3 div.service-card -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-sack-dollar"></i>
+          </div>
+          <h3>Loans & Credit</h3>
+          <p>Affordable Loans & Credit</p>
+        </div>
+
+        <!-- 4 div.service-card -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Investment Plans</h3>
+          <p>Grow Your Wealth</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. forms-section -->
+    <section class="forms-section">
+      <!--  div.forms-grid -->
+      <div class="forms-grid">
+        <!-- div.login-card -->
+        <div class="login-card">
+          <h2>Login to Your Account</h2>
+          <form action="#">
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input
+                type="email"
+                id="login-email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <!-- button.btn-login -->
+            <button type="submit" class="btn-login">Login</button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+          </form>
+        </div>
+
+        <!-- div.register-card -->
+        <div class="register-card">
+          <h2>Open a New Account</h2>
+          <form action="#">
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Enter full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter email address"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter phone number"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="account-type">Account Type</label>
+              <select id="account-type" required>
+                <option value="" disabled selected>Select Account Type</option>
+                <option value="savings">Savings Account</option>
+                <option value="checking">Checking Account</option>
+                <option value="business">Business Account</option>
+              </select>
+            </div>
+
+            <!-- button.btn-create -->
+            <button type="submit" class="btn-create">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--  footer -->
+    <footer>
+      <!-- div.footer-content -->
+      <div class="footer-content">
+        <p>&copy; 2026 MyBank. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

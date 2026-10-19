@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333333;
+}
+
+/* 1. header  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #0b2545;
+  color: #ffffff;
+}
+
+/* div.logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* div.nav-links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffc107;
+}
+
+/*  div.nav-cta */
+.login-cta {
+  background-color: #ffc107;
+  color: #000000;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-cta:hover {
+  background-color: #e0a800;
+}
+
+/*  hero-section */
+.hero-section {
+  width: 100%;
+}
+
+/* div.hero-bg */
+.hero-bg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/OIP.jpg") center/cover no-repeat;
+  background-color: #134074;
+  padding: 5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* div.hero-content */
+.hero-content {
+  border: 2px dashed rgba(255, 255, 255, 0.6);
+  padding: 2.5rem 3rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  max-width: 45rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/*  h1.hero-title */
+.hero-title {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+
+/*  p.hero-subtitle */
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 1.8rem;
+}
+
+/*  a.hero-btn */
+.hero-btn {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #000000;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #e0a800;
+}
+
+/* services-section */
+.services-section {
+  padding: 3rem 3rem;
+  background-color: #ffffff;
+}
+
+/* div.section-header */
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-header h2 {
+  font-size: 1.8rem;
+  color: #0b2545;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background-color: #e0e0e0;
+  z-index: 0;
+}
+
+/* div.services-grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.5rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+/* div.service-card */
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #134074;
+  margin-bottom: 0.8rem;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  color: #0b2545;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+/* 4. forms-section */
+.forms-section {
+  padding: 3.5rem 3rem;
+  background-color: #f4f7f6;
+}
+
+/* div.forms-grid */
+.forms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2.5rem;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+/* div.login-card & div.register-card */
+.login-card,
+.register-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.login-card h2,
+.register-card h2 {
+  font-size: 1.4rem;
+  color: #0b2545;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #333333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #cccccc;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #134074;
+}
+
+/* button.btn-login & button.btn-create */
+.btn-login,
+.btn-create {
+  width: 100%;
+  background-color: #0b2545;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover,
+.btn-create:hover {
+  background-color: #134074;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #134074;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+footer {
+  background-color: #0b2545;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.25rem 1rem;
+}
+
+/* div.footer-content */
+.footer-content p {
+  font-size: 0.875rem;
+  color: #d0d0d0;
+}
